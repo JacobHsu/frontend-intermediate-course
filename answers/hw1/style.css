@@ -8,7 +8,6 @@ body{
 	background-image: url('../images/background-image.jpg');
 	background-attachment:fixed;
 	color:#fff;
-	overflow-y:auto;
 }
 #container{
 	width: 100%;
