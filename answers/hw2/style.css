@@ -1,0 +1,63 @@
+html,
+body{
+	height: 100%;
+	padding: 0;
+	margin:0;
+}
+body{
+	background-image: url('../images/background-image.jpg');
+	background-attachment:fixed;
+	color:#fff;
+}
+#container{
+	width: 100%;
+	z-index: -999;
+	background:rgba(0,0,0,.5);
+	display: flex;
+	justify-content: center; 
+}
+.item{
+	background-image: url('../images/404_preview-320x180.jpg'); /*遊戲預覽畫面*/
+	background-size: 300px 200px;
+	background-repeat:no-repeat;
+	width:300px; 
+	height:200px;
+	display: inline-block;
+	list-style: none;
+	margin:5px 10px 15px 20px;
+	padding-bottom: 98px;
+	position: relative;
+	left: 10%;
+}
+.item:hover,
+.avatar:hover{
+	box-shadow: 1px 3px 3px 3px #000;
+	filter: contrast(100%) brightness(140%);
+	transition: 1s;
+
+}
+.avatar{
+	background: #000;
+	opacity: 0.6;
+	position: absolute;
+	top: 198px;
+	width: 300px;
+	height: 105px;
+	left: 0px;
+	
+}
+.img{
+	border-radius: 50%;
+	background-size: 50px 50px;
+	width: 70px;
+	height: 70px;
+	position: relative;
+	left: 20px;
+	top:20px;
+}
+.channel,
+.host{
+	position: relative;
+	left:120px;
+	bottom:60px;
+}
