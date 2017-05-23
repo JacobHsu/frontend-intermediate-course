@@ -16,16 +16,17 @@ $(function() {
 
                 console.log('ajax is loading successfully!!');
                 var autoplay= false;
+                
                 for (var i = 0; i <=20; i++) {
                     // iframe
-                    $('.video_' + i).attr('src', 'https://player.twitch.tv/?autoplay='+ autplay +'&channel=' + data.streams[i].channel.name);
+                    $('.video_' + i).attr('src', 'https://player.twitch.tv/?autoplay='+ autoplay +'&channel=' + data.streams[i].channel.name);
                     // host icon
                     $('.img_' + i).attr('src', data.streams[i].channel.logo);
                     // status of channel
                     $('#info_' + i).html('<p class="channel">' + data.streams[i].channel.status + '</p><p class="host">' + data.streams[i].channel.display_name + '</p>');
                 }
             },
-            error: function(err) {
+            error: function() {
                 console.log('Error');
             }
         });
