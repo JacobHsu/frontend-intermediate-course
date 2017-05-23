@@ -1,0 +1,84 @@
+html,
+body{
+	width: 100%; /*delete this */
+	height: 100%;
+	padding: 0;
+	margin:0;
+}
+body{
+	background-image: url('../../images/background-image.jpg'); /* background */
+	background-attachment:fixed;
+	color:#fff;
+	overflow-y:auto;/*delete this */
+}
+#container{
+	width: 100%;
+	z-index: -999;
+	background-size: cover;
+	background:rgba(0,0,0,.5);
+	display: flex;
+	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  	display: -ms-flexbox;  /* TWEENER - IE 10 */
+  	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	justify-content: center; 
+}
+.item{
+	/*background-image: url('../images/game-preview.jpg');*/ /*遊戲預覽畫面*/
+	background-repeat:no-repeat;
+	width:300px; 
+	height:200px;
+	display: inline-block;
+	list-style: none;
+	/* Notice */
+	margin:5px 10px 15px 20px;/*上 右 下 左*/
+	/*	padding-left: 10px;
+	padding-right: 0px;
+	padding-bottom: 80px;
+	padding-top:5px;
+*/
+	padding-bottom: 98px;
+
+	position: relative;
+	left: 10%;
+}
+.item:hover,
+.avatar:hover{
+	box-shadow: 1px 3px 3px 3px #000;
+	filter: contrast(100%) brightness(140%);
+}
+.avatar{
+	background: #000;
+	opacity: 0.6;
+	position: absolute;
+	top: 198px; /*180px*/
+	width: 300px;
+	height: 105px;
+	left: 0px;
+	border-top:1px solid #fff;
+}
+.avatar img{
+	border-radius: 50%;
+	background-size: 50px 50px;
+	width: 50px;
+	height:50px;
+	position: relative;
+	left: 20px;
+	top:20px;
+	overflow:hidden; 
+}
+iframe{
+    border: none;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.info{
+	position: absolute;
+	left:90px;
+	top:0px;
+	display: inline-block;
+	font-size: 14px;
+	overflow: hidden;
+}
