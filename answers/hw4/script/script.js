@@ -15,10 +15,10 @@ $(function() {
             success: function(data) {
 
                 console.log('ajax is loading successfully!!');
-
-                for (var i = data.result.streams; i <=data.result.streams.length; i++) {
+                var autoplay= false;
+                for (var i = 0; i <=20; i++) {
                     // iframe
-                    $('.video_' + i).attr('src', 'https://player.twitch.tv/?autoplay=false&channel=' + data.streams[i].channel.name);
+                    $('.video_' + i).attr('src', 'https://player.twitch.tv/?autoplay='+ autplay +'&channel=' + data.streams[i].channel.name);
                     // host icon
                     $('.img_' + i).attr('src', data.streams[i].channel.logo);
                     // status of channel
