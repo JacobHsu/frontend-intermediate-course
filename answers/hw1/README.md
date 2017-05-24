@@ -1,6 +1,6 @@
 <h1>HW1-基本 HTML/CSS 練習：以 Twitch 為例</h1><br>
 <hr>
-<h3>自我練習</h3><br>
+<h3>自我練習</h3>
 <ol>
 <li><h4>請問 CSS 的屬性position有哪幾種值？</h4></li>
 <p>有4種，分別是: static、relative、fixed、absolute。</p>
