@@ -97,7 +97,11 @@ body {
     position: absolute;
     left: 90px;
     top: 0px;
-    display: inline-block;
     font-size: 15px;
+    width:210px;
 }
-
+.info p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
