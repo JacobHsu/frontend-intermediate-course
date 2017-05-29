@@ -10,10 +10,10 @@ $(function() {
 
         $.ajax({
             type: 'GET',
-            url: twitchURL,
+            url: 'https://api.twitch.tv/kraken/streams/?game=League%20of%20Legends',
             headers: {
-                'Accept': myContentType,
-                'Client-ID': clientID // need to register a 'developer application' on the connections page of Twitch account.
+                'Accept':'application/vnd.twitchtv.v5+json',
+                'Client-ID': 'rx55ypcn5s81meroo6b5fagl1bwwkw' // need to register a 'developer application' on the connections page of Twitch account.
             },
 
             success: function(data) {
