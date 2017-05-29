@@ -20,7 +20,7 @@ $(function() {
 
                 console.log('ajax is loading successfully!!');
 
-                for (var i = 0; i <= 20; i++) {
+                for (var i = 0; i < 20; i++) {
                     var $content =`
                     <li class='item'>
                         <div class='video_'>
