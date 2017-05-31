@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' href='css/style.css'></link>
+    <title>Frontend Intermediate Course-hw7</title>
+</head>
+
+<body>
+    <div id='container'>
+        <div id='menu'>
+            <h1 id='title'>用中文直播的頻道</h1>
+            <button onclick='chageLanguage("zh-tw")' id='twBTN'>中文</button>
+            <button onclick='chageLanguage("en")' id='enBTN'>English</button>
+        </div>
+        <ul id='content'>
+        </ul>
+    </div>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+    <script type='text/javascript' src='script/script.js'></script>
+    <script src='script/i18n/lang-en.js'></script>
+    <script src='script/i18n/lang-zh-tw.js'></script>
+</body>
+
+</html>
