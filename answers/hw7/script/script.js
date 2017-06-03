@@ -1,23 +1,24 @@
 let currentPage = 0; 
- let isLoading = false;
- let language = 'zh-tw'; // default language
- let title = document.getElementById('title');
+let isLoading = false;
+let language = 'zh-tw'; // default language
+let title = document.getElementById('title');
 
  // i18n
- function chageLanguage(lang) {
+function chageLanguage(lang) {
 
      console.log('Language is:' + lang)
 
      title.textContent = window.I18N[lang].TITLE;
+     currentPage = 0;
      language = lang;
      refreshTable();
      appendData(language);
- }
+}
  // claer
- function refreshTable() {
+function refreshTable() {
      $("#content").empty();
 
- }
+}
 
 $(document).ready(function() {
     
@@ -34,7 +35,7 @@ $(document).ready(function() {
 
 })
 
- function getData(lang, callback) { 
+function getData(lang, callback) { 
 
      console.log('loading');
 
@@ -61,9 +62,9 @@ $(document).ready(function() {
              callback(null, err);
          }
      })
- }
+}
 
- function appendData(lang) {
+function appendData(lang) {
      getData(lang, (err, data) => {
          const { streams } = data;
          const $content = $('#content');
@@ -73,9 +74,9 @@ $(document).ready(function() {
          currentPage += 20;
          isLoading = false;
      });
- }
+}
 
- function getTemaplateData(data) {
+function getTemaplateData(data) {
 
      var logo = data.channel.logo;
      var placeholderIMG = data.preview.medium;
