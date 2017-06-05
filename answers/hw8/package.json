@@ -1,0 +1,20 @@
+{
+  "name": "hw8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "clingoram",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "style-loader": "^0.18.1",
+    "url-loader": "^0.5.8",
+    "jquery": "^2.1.4",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
