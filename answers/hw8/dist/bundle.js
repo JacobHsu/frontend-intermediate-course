@@ -9340,9 +9340,9 @@ if(false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function($) {// requires different files from others 
-const en = __webpack_require__(0);
-const tw = __webpack_require__(1);
-const style = __webpack_require__(3);
+var en = __webpack_require__(0);
+var tw = __webpack_require__(1);
+var style = __webpack_require__(3);
 
 let currentPage = 0; 
 let isLoading = false;
