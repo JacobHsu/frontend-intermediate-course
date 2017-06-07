@@ -1,7 +1,7 @@
 // requires different files from others 
-const en = require('./i18n/lang-en.js');
-const tw = require('./i18n/lang-zh-tw.js');
-const style = require('./style/css/style.css');
+var en = require('./i18n/lang-en.js');
+var tw = require('./i18n/lang-zh-tw.js');
+var style = require('./style/css/style.css');
 
 let currentPage = 0; 
 let isLoading = false;
