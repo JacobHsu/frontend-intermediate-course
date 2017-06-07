@@ -1,8 +1,9 @@
 // requires different files from others 
-var en = require('./i18n/lang-en.js');
-var tw = require('./i18n/lang-zh-tw.js');
 var style = require('./style/css/style.css');
-
+var i18n = {
+    en:require('./i18n/lang-en.js'),
+    tw:require('./i18n/lang-zh-tw.js')
+};
 let currentPage = 0; 
 let isLoading = false;
 let language = 'zh-tw'; // default language
@@ -17,12 +18,12 @@ function changeLanguage(lang) {
 
     if (attr === 'en' || attr === 'zh-tw') {
 
-        theTitle.innerHTML = window.I18N[attr].TITLE; // switch the language of stream.
+        theTitle.innerHTML = i18n[attr].TITLE; // switch the language of stream.
 
         if( attr === 'zh-tw') {
-            console.log('你正使用' + ' ' + window.I18N[attr].WORDS + '觀看Twitch。')
+            console.log('你正使用' + ' ' + i18n[attr].WORDS + '觀看Twitch。')
         } else {
-            console.log("You're viewing Twitch in"+' '+ window.I18N[attr].WORDS);
+            console.log("You're viewing Twitch in"+' '+ i18n[attr].WORDS);
         }
 
         language = attr;
