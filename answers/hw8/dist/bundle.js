@@ -71,19 +71,19 @@
 /***/ (function(module, exports) {
 
 module.exports = {
-	TITLE:'The Streams in English.',
-    WORDS:'English(US).'
-}
+    'TITLE': 'The Streams in English.',
+    'WORDS': 'English(US).'
+};
+
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
 
 module.exports = {
-  TITLE: '用中文直播的頻道',
-  WORDS:'繁體中文 '
-}
-
+    'TITLE': '用中文直播的頻道',
+    'WORDS': '繁體中文'
+};
 
 /***/ }),
 /* 2 */
@@ -9339,16 +9339,16 @@ if(false) {
 
 /* WEBPACK VAR INJECTION */(function($) {// requires different files from others 
 var style = __webpack_require__(3);
-var i18n={
-    en:__webpack_require__(0),
-    tw:__webpack_require__(1)
+var I18N = {
+    'zh-tw': __webpack_require__(1),
+    en: __webpack_require__(0)
 };
 
-let currentPage = 0; 
+let currentPage = 0;
 let isLoading = false;
 let language = 'zh-tw'; // default language
-let theTitle = document.getElementById('title');
-document.getElementById('btn').addEventListener('click',changeLanguage);
+const theTitle = document.getElementById('title');
+document.getElementById('btn').addEventListener('click', changeLanguage);
 
 // i18n
 function changeLanguage(lang) {
@@ -9356,15 +9356,15 @@ function changeLanguage(lang) {
     var e = event.target;
     const attr = e.getAttribute('data-selectLang');
 
-    if (attr === 'en' || attr === 'zh-tw') {
+    if (attr === 'zh-tw' || attr === 'en') {
 
-        theTitle.innerHTML = i18n[attr].TITLE; // switch the language of stream.
+        theTitle.innerHTML = I18N[attr].TITLE;   // switch the language of stream.
 
-        if( attr === 'zh-tw') {
-            console.log('你正使用' + ' ' + i18n[attr].WORDS + '觀看Twitch。')
+        if (attr === 'zh-tw') {
+            console.log('你正使用' + ' ' + I18N[attr].WORDS + '觀看Twitch。');
         } else {
-            console.log("You're viewing Twitch in"+' '+ i18n[attr].WORDS);
-        }
+            console.log("You're viewing Twitch in" + ' ' + I18N[attr].WORDS);
+        };
 
         language = attr;
         currentPage = 0;
@@ -9375,7 +9375,7 @@ function changeLanguage(lang) {
 
 $(document).ready(function infiniteScroll() {
 
-    appendData(language); 
+    appendData(language);
     const reverse_height = 200;
     $(window).scroll(function() {
         if ($(window).scrollTop() + $(window).height() > $(document).height() - reverse_height) {
@@ -9391,7 +9391,7 @@ function getData(lang, callback) {
 
     console.log('Loading data.');
 
-    const clientId = 'rx55ypcn5s81meroo6b5fagl1bwwkw'; 
+    const clientId = 'rx55ypcn5s81meroo6b5fagl1bwwkw';
     const mycontentType = 'application/vnd.twitchtv.v5+json';
     const autoplay = false;
     const limit = 20;
@@ -9417,8 +9417,8 @@ function getData(lang, callback) {
 }
 
 function appendData(lang) {
-    getData(lang, (err, data) => { 
-        const { streams } = data;
+    getData(lang, (err, data) => {
+        const {streams} = data;
         const $content = $('#content');
         for (let stream of streams) {
             $content.append(getTemplateData(stream));
@@ -9457,6 +9457,7 @@ function getTemplateData(data) {
                 </div>
             </li>`;
 }
+
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
