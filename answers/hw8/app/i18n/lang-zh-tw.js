@@ -1,5 +1,4 @@
-if (!window.I18N) window.I18N = {};
-window.I18N['zh-tw'] = {
+module.exports = {
   TITLE: '用中文直播的頻道',
   WORDS:'繁體中文 '
 }
