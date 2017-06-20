@@ -22,8 +22,8 @@
     ]<br>
   }<br>
   </ul>
-我原本只有安裝在Local，但我發現我打了$ semistandard 後沒反應，於是又在package.json加了:"test": "semistandard && node my-normal-tests-littered-with-semicolons.js"，之後npm test，它終於開始檢測了!但無法auto fix。<br>
-於是，我把它移除後，以global安裝，也安裝了snazzy，它可以正常檢測了。
+我原本安裝在Local，但我發現我打了$ semistandard 後沒反應，於是又在package.json加了:"test": "semistandard && node my-normal-tests-littered-with-semicolons.js"，之後npm test，它終於開始檢測了!但無法auto fix。<br>
+後來，我改以global安裝，也安裝了snazzy，它可以正常檢測了。
 
 進行檢測:<br>
 $ semistandard <br>
