@@ -17,4 +17,4 @@ CSS預處理器比較像是JavaScript，會有變數等等，會使語法可讀�
 <h3>資源</h3>
 <a href='http://ithelp.ithome.com.tw/articles/10126905'>30天掌握Sass語法</a>
 <h1>Demo</h1>
-<p>https://clingoram.github.io/frontend-intermediate-course/answers/hw2/index.html</p>
+<p>https://clingoram.github.io/frontend-intermediate-course/answers/hw3/index.html</p>
