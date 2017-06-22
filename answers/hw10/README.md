@@ -31,6 +31,9 @@ auto fix:<br>
 $ semistandard --fix<br>
 好讀:<br>
 $ semistandard --verbose | snazzy<br>
+<hr>
+<h3>後記</h3>
+Huli說如果安裝在Local，可在Package.json中的"test"加上"semistandard"，之後npm test
 <h1>Demo</h1>
 https://clingoram.github.io/frontend-intermediate-course/answers/hw10/index.html
 
