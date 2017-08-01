@@ -107,6 +107,8 @@ Ex：<br>
 ref:<a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Status'>HTTP Status</a>
 <a href='https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81'>Status code</a>
 </ol>
+自己的解釋:<br>
+首先，server會訂出規則，client遵守該規則並跟server提出要求(http request)，告訴server自己想要甚麼東西(http method)，server找到並回覆client(http response)結果，而該response會有3位數(http status code)組成。<br>
 Ref:codecademy
 
 <hr>
