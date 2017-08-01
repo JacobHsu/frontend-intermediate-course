@@ -87,6 +87,12 @@ Ex：<br>
 <li>Header：有關該Client的更多資訊</li>
 <li>Body：如果是GET的話就會是空白的，要不就是有關 Response 的內容</li>
 </ol>
+<h4>基本的 Response 組成:</h4>
+<ol>
+<li>Response Line：包含 3 碼的 HTTP status code</li>
+<li>Header：有關 Server 的更多資訊</li>
+<li>Body：有關 Response 的內容</li>
+</ol>
 <h4>Status Code</h4>
 <ol>
 <li>對 Server 請求成功的 Request，Server 會用 Response 回覆你結果。</li>
