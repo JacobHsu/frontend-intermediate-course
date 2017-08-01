@@ -72,11 +72,11 @@ Ex：<br>
 </ol>
 <hr>
 <h2>另外補充</h2>
-<h4>API 基本概念</h4>
+<h4>API(Application Programming Interface)基本概念</h4>
 <ol>
 <li>將 Client 與 Server 分開。</li>
 <li>每個 Request 間都不應該保持 State (狀態)，意指 Request 不會攜帶 State、Data</li>
-<li>使用 HTTP 方法</li>
+<li>使用 HTTP method</li>
 </ol>
 <h4>API key</h4>
 大部分的API都需要API key才能使用，是為了要辨識使用者，及方便API提供者追蹤到底有多少人使用該API，也避免未認證的人使用API做出惡意行為。
