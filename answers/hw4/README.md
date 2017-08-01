@@ -97,9 +97,9 @@ Ex：<br>
 <li>3xx：Server 能完成你想要它做的事情，但是它必須先做其他事。</li>
 <li>4xx：代表可能你可能發生錯誤。</li>
 <li>5xx：Server 發生錯誤，無法成功回覆你。</li>
-
 </ul>
 </ol>
+部分資料來源:codecademy
 <hr>
 <h1>Demo:</h1><br>
 <p>https://clingoram.github.io/frontend-intermediate-course/answers/hw4/index.html</p>
