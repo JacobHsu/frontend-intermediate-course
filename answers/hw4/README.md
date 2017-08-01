@@ -85,7 +85,7 @@ Ex：<br>
 <ol>
 <li>Request line:：告訴server是哪種request(GET、POST 、DELETE or PUT?)，request甚麼</li>
 <li>Header：有關該Client的更多資訊</li>
-<li>Body：如果是GET的話就會是空白的，要不就是有關 Response 的內容</li>
+<li>Body：如果是GET的話就會是空白的，要不就是有關Request的內容</li>
 </ol>
 <h4>基本的 Response 組成:</h4>
 <ol>
