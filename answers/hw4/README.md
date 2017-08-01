@@ -79,13 +79,13 @@ Ex：<br>
 <li>使用 HTTP method</li>
 </ol>
 <h4>API key</h4>
-大部分的API都需要API key才能使用，是為了要辨識使用者，及方便API提供者追蹤到底有多少人使用該API，也避免未認證的人使用API做出惡意行為。
+大部分的API都需要API key才能使用，目的是為了要辨識使用者，及方便API provider追蹤該API使用狀況，也避免未認證的人使用API做出惡意行為。
 有些API會使用<a href='https://zh.wikipedia.org/wiki/OAuth'>OAuth</a>協定進行使用者認證。
 <h4>基本的 Request 組成:</h4>
 <ol>
-<li>Request line:：包含 3 碼的 HTTP status code</li>
-<li>Header：有關 Server 的更多資訊</li>
-<li>Body：有關 Response 的內容</li>
+<li>Request line:：告訴server是哪種request(GET、POST 、DELETE or PUT?)，request甚麼</li>
+<li>Header：有關該Client的更多資訊</li>
+<li>Body：如果是GET的話就會是空白的，要不就是有關 Response 的內容</li>
 </ol>
 <h4>Status Code</h4>
 <ol>
