@@ -11,6 +11,7 @@
 <li>PATCH: 更新資源部份內容</li>
 <li>HEAD: 類似GET，但只回傳HTTP header (safe & idempotent)</li>
 </ul>
+以GET、POST、PUT、DELETE為主要。
 </p>
 <li><h4>GET 跟 POST 有哪些區別，可以試著舉幾個例子嗎？</h4></li>
 <p>
@@ -69,5 +70,36 @@ Ex：<br>
 
 </p>
 </ol>
+<hr>
+<h2>另外補充</h2>
+<h4>API 基本概念</h4>
+<ol>
+<li>將 Client 與 Server 分開。</li>
+<li>每個 Request 間都不應該保持 State (狀態)，意指 Request 不會攜帶 State、Data</li>
+<li>使用 HTTP 方法</li>
+</ol>
+<h4>API key</h4>
+大部分的API都需要API key才能使用，是為了要辨識使用者，及方便API提供者追蹤到底有多少人使用該API，也避免未認證的人使用API做出惡意行為。
+有些API會使用<a href='https://zh.wikipedia.org/wiki/OAuth'>OAuth</a>協定進行使用者認證。
+<h4>基本的 Request 組成:</h4>
+<ol>
+<li>Request line:：包含 3 碼的 HTTP status code</li>
+<li>Header：有關 Server 的更多資訊</li>
+<li>Body：有關 Response 的內容</li>
+</ol>
+<h4>Status Code</h4>
+<ol>
+<li>對 Server 請求成功的 Request，Server 會用 Response 回覆你結果。</li>
+<li>Response 主要會由三個數字組成，通常都是 1、2、3、4、5 開頭：</li>
+<ul>
+<li>1xx：Server 正在處理你的請求。</li>
+<li>2xx：Okay!!</li>
+<li>3xx：Server 能完成你想要它做的事情，但是它必須先做其他事。</li>
+<li>4xx：代表可能你可能發生錯誤。</li>
+<li>5xx：Server 發生錯誤，無法成功回覆你。</li>
+
+</ul>
+</ol>
+<hr>
 <h1>Demo:</h1><br>
 <p>https://clingoram.github.io/frontend-intermediate-course/answers/hw4/index.html</p>
