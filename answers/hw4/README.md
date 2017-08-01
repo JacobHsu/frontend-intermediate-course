@@ -98,8 +98,11 @@ Ex：<br>
 <li>4xx：代表可能你可能發生錯誤。</li>
 <li>5xx：Server 發生錯誤，無法成功回覆你。</li>
 </ul>
+ref:<a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Status'>HTTP Status</a>
+<a href='https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81'>Status code</a>
 </ol>
-部分資料來源:codecademy
+Ref:codecademy
+
 <hr>
 <h1>Demo:</h1><br>
 <p>https://clingoram.github.io/frontend-intermediate-course/answers/hw4/index.html</p>
