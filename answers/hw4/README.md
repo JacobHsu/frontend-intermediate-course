@@ -110,7 +110,7 @@ ref:<a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Status'>HTTP Stat
 自己的解釋:<br>
 首先，server會訂出規則，client遵守該規則並跟server提出要求(http request)，告訴server自己想要甚麼東西(http method)，server找到並回覆client(http response)結果，而該response會有3位數(http status code)組成。<br>
 <br>
-Ref:codecademy
+Ref:codecademy、<a href='https://tw.twincl.com/programming/*641y'>RESETful API設計要點</a>
 
 <hr>
 <h1>Demo:</h1><br>
